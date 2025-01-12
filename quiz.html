@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kereskedő és Webáruházi Technikus Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .question-container label {
+            display: block;
+            margin: 5px 0;
+        }
+        .result {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .button {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Kereskedő és Webáruházi Technikus Quiz</h1>
+
+<form id="quizForm">
+    <!-- I. Fogalmi kérdések -->
+    <div class="question-container">
+        <p>1. Mit jelent az árrés?</p>
+        <label><input type="radio" name="q1" value="a"> a) Az eladási ár és a beszerzési ár különbsége</label>
+        <label><input type="radio" name="q1" value="b"> b) Az eladási ár és az ÁFA különbsége</label>
+        <label><input type="radio" name="q1" value="c"> c) A raktárkészlet értéke</label>
+    </div>
+    <div class="question-container">
+        <p>2. Mi a konverziós arány jelentése?</p>
+        <label><input type="radio" name="q2" value="a"> a) Az online vásárlók és a teljes weboldallátogatók aránya</label>
+        <label><input type="radio" name="q2" value="b"> b) Az eladott termékek aránya az összes raktárkészlethez képest</label>
+        <label><input type="radio" name="q2" value="c"> c) A látogatók száma egy adott időszak alatt</label>
+    </div>
+    <div class="question-container">
+        <p>3. Melyik platform NEM webshop motor?</p>
+        <label><input type="radio" name="q3" value="a"> a) Magento</label>
+        <label><input type="radio" name="q3" value="b"> b) Shopify</label>
+        <label><input type="radio" name="q3" value="c"> c) Photoshop</label>
+    </div>
+    <div class="question-container">
+        <p>4. Mi a készletforgási sebesség képlete?</p>
+        <label><input type="radio" name="q4" value="a"> a) Készletérték / Forgalom</label>
+        <label><input type="radio" name="q4" value="b"> b) Eladott áruk költsége / Átlagos készletérték</label>
+        <label><input type="radio" name="q4" value="c"> c) Bevétel / Raktárterület</label>
+    </div>
+    <div class="question-container">
+        <p>5. Milyen adókulcsot használnak Magyarországon az ÁFA számítására?</p>
+        <label><input type="radio" name="q5" value="a"> a) 18%</label>
+        <label><input type="radio" name="q5" value="b"> b) 27%</label>
+        <label><input type="radio" name="q5" value="c"> c) 25%</label>
+    </div>
+
+    <!-- II. Számítási kérdések -->
+    <div class="question-container">
+        <p>6. Egy termék nettó ára 10.000 Ft, az ÁFA kulcs 27%. Mennyi a bruttó ár?</p>
+        <label><input type="radio" name="q6" value="a"> a) 12.000 Ft</label>
+        <label><input type="radio" name="q6" value="b"> b) 12.700 Ft</label>
+        <label><input type="radio" name="q6" value="c"> c) 13.000 Ft</label>
+    </div>
+    <div class="question-container">
+        <p>7. Egy termék beszerzési ára 5.000 Ft, az árrés 50%. Mennyi az eladási ár?</p>
+        <label><input type="radio" name="q7" value="a"> a) 7.500 Ft</label>
+        <label><input type="radio" name="q7" value="b"> b) 10.000 Ft</label>
+        <label><input type="radio" name="q7" value="c"> c) 12.500 Ft</label>
+    </div>
+    <div class="question-container">
+        <p>8. Egy webáruházban 2.000 látogató volt egy nap alatt, és 50 vásárlás történt. Mennyi a konverziós arány?</p>
+        <label><input type="radio" name="q8" value="a"> a) 2,5%</label>
+        <label><input type="radio" name="q8" value="b"> b) 5%</label>
+        <label><input type="radio" name="q8" value="c"> c) 25%</label>
+    </div>
+    <div class="question-container">
+        <p>9. Egy marketingkampány során 100.000 Ft-ot költöttek hirdetésekre, és 300.000 Ft bevétel keletkezett. Mennyi a ROI?</p>
+        <label><input type="radio" name="q9" value="a"> a) 200%</label>
+        <label><input type="radio" name="q9" value="b"> b) 300%</label>
+        <label><input type="radio" name="q9" value="c"> c) 400%</label>
+    </div>
+    <div class="question-container">
+        <p>10. Egy webshop havi forgalma 1.000.000 Ft, az összes költsége 700.000 Ft. Mennyi a nyereség?</p>
+        <label><input type="radio" name="q10" value="a"> a) 300.000 Ft</label>
+        <label><input type="radio" name="q10" value="b"> b) 400.000 Ft</label>
+        <label><input type="radio" name="q10" value="c"> c) 500.000 Ft</label>
+    </div>
+
+    <!-- III. Kombinált kérdések -->
+    <div class="question-container">
+        <p>11. Ha egy hirdetés 10.000 megjelenést ért el, és 500-an kattintottak rá, mennyi az átkattintási arány (CTR)?</p>
+        <label><input type="radio" name="q11" value="a"> a) 0,5%</label>
+        <label><input type="radio" name="q11" value="b"> b) 5%</label>
+        <label><input type="radio" name="q11" value="c"> c) 50%</label>
+    </div>
+    <div class="question-container">
+        <p>12. Egy webshopban 10 termék van raktáron, az átlagos készletérték 50.000 Ft, az eladott áruk költsége 250.000 Ft. Mennyi a készletforgási sebesség?</p>
+        <label><input type="radio" name="q12" value="a"> a) 2</label>
+        <label><input type="radio" name="q12" value="b"> b) 5</label>
+        <label><input type="radio" name="q12" value="c"> c) 10</label>
+    </div>
+    <div class="question-container">
+        <p>13. Egy eladott termék ára bruttó 12.700 Ft. Mennyi a nettó ár, ha az ÁFA kulcs 27%?</p>
+        <label><input type="radio" name="q13" value="a"> a) 10.000 Ft</label>
+        <label><input type="radio" name="q13" value="b"> b) 10.200 Ft</label>
+        <label><input type="radio" name="q13" value="c"> c) 10.500 Ft</label>
+    </div>
+    <div class="question-container">
+        <p>14. Egy terméken 40% árrést szeretnél elérni. Ha a beszerzési ár 6.000 Ft, mennyi legyen az eladási ár?</p>
+        <label><input type="radio" name="q14" value="a"> a) 8.400 Ft</label>
+        <label><input type="radio" name="q14" value="b"> b) 10.000 Ft</label>
+        <label><input type="radio" name="q14" value="c"> c) 9.000 Ft</label>
+    </div>
+    <div class="question-container">
+        <p>15. Egy webshop éves bevétele 10 millió Ft, a közvetlen költségek 7 millió Ft. Mennyi a bruttó fedezet százalékban?</p>
+        <label><input type="radio" name="q15" value="a"> a) 20%</label>
+        <label><input type="radio" name="q15" value="b"> b) 30%</label>
+        <label><input type="radio" name="q15" value="c"> c) 40%</label>
+    </div>
+
+    <button type="button" class="button" onclick="calculateResult()">Értékelés</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+    function calculateResult() {
+        const answers = {
+            q1: 'a', q2: 'a', q3: 'c', q4: 'b', q5: 'b',
+            q6: 'b', q7: 'b', q8: 'a', q9: 'a', q10: 'a',
+            q11: 'b', q12: 'b', q13: 'a', q14: 'a', q15: 'c'
+        };
+        
+        let score = 0;
+
+        for (let question in answers) {
+            const selected = document.querySelector(`input[name="${question}"]:checked`);
+            if (selected && selected.value === answers[question]) {
+                score++;
+            }
+        }
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.textContent = `Az Ön eredménye: ${score} / 15`;
+    }
+</script>
+
+</body>
+</html>
